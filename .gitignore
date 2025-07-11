@@ -1,0 +1,31 @@
+# Virtual environment
+.venv/
+tf-env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# TensorFlow
+*.h5
+*.pb
+saved_model/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
