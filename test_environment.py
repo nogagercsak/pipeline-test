@@ -28,7 +28,15 @@ def test_setup():
         print(f"Model loading failed: {e}")
         return False
     
-    print("All tests passed!")
+    # Test image preprocessing
+    try:
+        from tensorflow.keras.applications.vgg16 import preprocess_input, decode_predictions
+        print("VGG16 preprocessing functions available")
+    except Exception as e:
+        print(f"VGG16 preprocessing test failed: {e}")
+        return False
+    
+    print("🎉 All tests passed!")
     return True
 
 if __name__ == "__main__":
